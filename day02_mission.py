@@ -1,12 +1,13 @@
-import random
+small =input("작나요 : ")
+green =input("녹색인가요 : ")
 
-secret = random.randint(1,10)
-#print("secret : ", secret)
-guess = int(input('guess : '))
-#print(guess)
-if guess < secret:
-    print('too low')
-elif guess > secret:
-    print('too high')
+if small: #작으면
+    if green: #녹색이면
+        print('pea')
+    else: #녹색이 아니면
+        print("cherry")
 else:
-    print('just right')
+    if green: #녹색이면
+        print('watermelon')
+    else: #녹색이 아니면
+        print("pumpkin")
